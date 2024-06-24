@@ -1,0 +1,69 @@
+body {
+    background-color: deeppink !important;
+    padding-top: 40px;
+}
+
+main {
+    background-image: linear-gradient(to bottom right, skyblue, purple);
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    border-radius: 20px;
+    padding-top: 100px;
+}
+
+.landing_page,
+.category_page {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+#app-name {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#first-divider,
+#second-divider {
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    height: 2px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.192);
+    margin-top: 10px !important;
+    width: 60%;
+    margin: auto;
+}
+
+#app-des {
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+/* Category Section */
+
+#category_page {
+    display: none;
+}
+
+#second-divider {
+    margin-bottom: 80px;
+}
+
+.categories-btns{
+    width: 200px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, deeppink, purple);
+    font-weight: bolder !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.categories-btns:hover {
+    background-image: linear-gradient(to right, skyblue, purple);
+}
