@@ -1,23 +1,29 @@
 body {
-    background-color: deeppink !important;
+    background-image: linear-gradient(to bottom right, purple, blue);
     padding-top: 40px;
 }
 
 main {
-    background-image: linear-gradient(to bottom right, skyblue, purple);
-    width: 90%;
+    width: 95%;
     margin: auto;
     height: 90vh;
     border-radius: 20px;
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.parent-container {
+    background-image: linear-gradient(to bottom right, skyblue, purple); 
 }
 
 .landing_page,
-.category_page {
+.category_page,
+.contents_page,
+.feedback_section {
     width: 90%;
     margin: auto;
     text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
+    /* outline: solid blue; */
 }
 
 #app-name {
@@ -66,4 +72,147 @@ main {
 
 .categories-btns:hover {
     background-image: linear-gradient(to right, skyblue, purple);
+}
+
+/* Contents Section */
+#contents_page{
+    display: none;
+    text-align: left;
+}
+.back_btn {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bolder;
+    color: deeppink;
+    width: 27px;
+    cursor: pointer;
+    /* outline: solid green; */
+}
+
+.quiz-title-section {
+    margin-top: 10px;
+    border-bottom: 2px solid purple;
+    padding-bottom: 10px;
+}
+
+.title-sections {
+    /* outline: solid yellow; */
+    align-content: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+.title-sections:first-child {
+    width: 50%;
+    padding-left: 10px;
+}
+
+.title-sections h6 {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#title-section2 {
+    background-color: rgba(135, 207, 235, 0.623);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#time-left {
+    background-color: black !important;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Quiz Main Section */
+#question-section{
+    text-align: left;
+    /* outline: solid green; */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.answer-section{
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: rgba(128, 0, 128, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.correct {
+    background-color: green !important;
+    color: white !important;
+}
+
+.incorrect {
+    background-color: red !important;
+    color: white;
+}
+
+/* Feeback Section Styling */
+.feedback_section {
+    display: none;
+    background-color: white;
+}
+
+#feedback-title {
+    color: deeppink;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#feeback-des {
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+#correct1,
+#correct2 {
+    color: rgba(0, 128, 0, 0.8);
+    font-weight: lighter;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#failed1,
+#failed2 {
+    color: rgba(255, 0, 0, 0.8);
+    font-weight: lighter;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+/* Feeback Section Styling Closed */
+
+/* Quiz footer section */
+#quiz-footer {
+    /* outline: solid black; */
+    margin-top: 50px;
+    text-align: left;
+    align-content: center;
+}
+
+#quiz-footer p {
+    margin-bottom: 0;
+    display: inline;
+    font-weight: bold;
+}
+
+#next-question-btn {
+    float: right;
+    display: inline;
+    background-color: deeppink;
+    outline: none;
+    border: none;
+    font-weight: bold;
 }

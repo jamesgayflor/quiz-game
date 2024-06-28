@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheke's Quiz Game</title>
     <link rel="shortcut icon" href="./icon.jpg" type="image/x-icon">
     <!-- Styles Sheet links -->
-     <link rel="stylesheet" href="./style.css">
-     <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/9183ef123e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header></header>
 
-    <main>
+    <main id="parent-container" class="parent-container">
         <!-- Landing section -->
-         <section class="landing_page" id="landing_page">
-            
+        <section class="landing_page" id="landing_page">
+
             <div id="landing_page_icon">
                 <img src="./icon4.png" alt="landing_icon">
             </div>
@@ -28,30 +31,102 @@
             <p id="app-des">Test your Knowedge with this app!</p>
 
             <!-- Start game btn -->
-             <button class="btn btn-primary" id="start-game">Play Now!</button>
-            
-         </section>
-         <!-- Landing section Ends-->
+            <button class="btn btn-primary" id="start-game">Play Now!</button>
 
-         <!-- Category section -->
-         <section class="category_page" id="category_page">
+        </section>
+        <!-- Landing section Ends-->
+
+        <!-- Category section -->
+        <section class="category_page" id="category_page">
 
             <!-- App Name -->
             <p id="app-name">Choose Category</p>
             <hr id="second-divider">
 
             <!-- Categories Selections-->
-             <button class="btn btn-primary categories-btns" id="html-category">HTML</button>
-             <br>
-             <button class="btn btn-primary categories-btns" id="css-category">CSS</button>
-             <br>
-             <button class="btn btn-primary categories-btns" id="js-category">JS</button>
+            <button class="btn btn-primary categories-btns" id="html-category">HTML</button>
+            <br>
+            <button class="btn btn-primary categories-btns" id="css-category">CSS</button>
+            <br>
+            <button class="btn btn-primary categories-btns" id="js-category">JS</button>
 
-         </section>
-         <!-- Category section Ends-->
+        </section>
+        <!-- Category section Ends-->
+
+        <!-- Questions & Answers section -->
+        <section class="contents_page" id="contents_page">
+
+            <!-- Return Navigation Btn -->
+            <div class="back_btn">
+                <i class="fa-solid fa-circle-arrow-left" id="back-btn"></i>
+            </div>
+            <!-- Return Navigation Btn -->
+
+            <!-- Quiz Title Section -->
+            <div class="quiz-title-section d-flex justify-content-between">
+                <div class="title-sections">
+                    <h6>Awesome Quiz Application</h6>
+                </div>
+                <div class="title-sections" id="title-section2">
+                    <span>Seconds left: <span id="time-left">10</span></span>
+                </div>
+            </div>
+            <!-- Quiz Title Section -->
+
+            <!-- Quiz main section -->
+            <div id="question-section">
+                <p><span id="q-number"> </span><span id="question"></span>
+                </p>
+            </div>
+            <!-- Quiz main section Ends-->
+
+            <!-- Quiz answers section -->
+             <button type="button" class="answer-section" id="answer1"></button>
+             <button type="button" class="answer-section" id="answer2"></button>
+             <button type="button" class="answer-section" id="answer3"></button>
+             <button type="button" class="answer-section" id="answer4"></button>
+            <!-- Quiz answers section Ends-->
+
+            <!-- Quiz footer section -->
+            <div id="quiz-footer">
+                <p class="question-count">
+                    <span id="current-q-count"></span>
+                    of
+                    <span id="store-q-count">5</span>
+                    Questions
+                </p>
+            </div>
+            <!-- Quiz footer section Ends-->
+
+        </section>
+        <!-- Questions & Answers section Ends-->
+
+        <!-- Feedback Section -->
+        <section class="feedback_section">
+                <!-- Feedback Title -->
+            <p id="feedback-title">HTML Quiz Results</p>
+            <hr id="first-divider">
+
+            <!-- Feedback Description (Correct)-->
+            <p id="feeback-des">Correct:</p>
+
+            <!-- App Correct Results -->
+            <p class="feeback-Results" id="correct1"></p>
+            <p class="feeback-Results" id="correct2"></p>
+
+            <!-- Feedback Description (Failed)-->
+            <p id="feeback-des">Wrong:</p>
+
+            <!-- App Failed Results -->
+            <p class="feeback-Results" id="failed1"></p>
+            <p class="feeback-Results" id="failed2"></p>
+        </section>
+        
+       <!-- Feedback Section -->
     </main>
 
     <footer></footer>
     <script type="module" src="./script.js"></script>
 </body>
+
 </html>

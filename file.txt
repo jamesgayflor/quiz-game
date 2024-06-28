@@ -1,0 +1,6 @@
+<span id="check" class="verify_icon">
+    <i class="fa-solid fa-circle-check"></i>
+</span>
+<span id="failed" class="verify_icon">
+    <i class="fa-solid fa-circle-xmark"></i>
+</span>
